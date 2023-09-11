@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+      }
+      :root {
+        --bg-color: #ffffff;
+        --bg2-color: #f99fb6;
+        --bg3-color: #9fbef9;
+        --secound-bg-color: #f9f9f9;
+        --text-color: #fff;
+        --main2-color: #005a56;
+        --main-color: #ff1e00;
+        --text2-color: #6a6a6a;
+        /* --big-font: 5.7rem; */
+        --big-font: 4.7rem;
+        --h2-font: 3.8rem;
+        --p-font: 1.2rem;
+      }
+      /* body */
+      body {
+        background: var(--bg-color);
+        color: var(--text-color);
+      }
+      .btn {
+        font-family: "Pacifico", cursive;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 16px 33px;
+        background: var(--main2-color);
+        color: var(--text-color);
+        border: 2px solid transparent;
+        border-radius: 40px;
+        transition: ease 0.4s;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+        background: transparent;
+        color: var(--text-color);
+        border: 2px solid var(--main2-color);
+      }
+      /* about section start */
+      .about {
+        width: 100%;
+        padding: 30px;
+        /* height: 100%; */
+        /* background: url(img/aboutWALL2.jpg); */
+        background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+      }
+      .first-about-h2 {
+        font-size: var(--h2-font);
+        color: var(--main2-color);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        border: #005a56 solid;
+        border-radius: 200px;
+      }
+      .about-img {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        grid-gap: 2rem; /*this line can fu*k me*/
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+      .about-img img {
+        padding-left: 10px;
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        box-shadow: 0px 30px 30px #37071765;
+      }
+      .about-text h2 {
+        font-size: var(--h2-font);
+        color: var(--main2-color);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.2rem;
+      }
+      .about-text h5 {
+        color: var(--main2-color);
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      }
+      .about-text p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        max-width: 570px;
+        line-height: 1.8;
+        color: #5f5e5e;
+        margin-bottom: 2.5rem;
+      }
+      .about-text a.btn:hover {
+        transform: scale(1.2);
+        background: transparent;
+        color: var(--main2-color);
+        border: 2px solid var(--main2-color);
+      }
+
+      /* about section media query */
+      @media (max-width: 935px) {
+        .about-img {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .about-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 466px) {
+        .about-img img {
+          width: 250px;
+          box-shadow: 0px 20px 20px #37071765;
+        }
+        .about-img {
+          padding-top: 50px;
+        }
+        .about-text h5 {
+          font-size: 1.1rem;
+        }
+        .about-text h2 {
+          font-size: 2.8rem;
+          font-weight: 600;
+        }
+        .about-text a.btn {
+          font-size: 10px;
+          font-weight: 600;
+        }
+        .about-text a.btn:hover {
+          transform: scale(1.1);
+        }
+        .about-text a.btn {
+          padding-bottom: 20px;
+        }
+      }
+      @media (max-width: 285px) {
+        .about-img img {
+          width: 200px;
+          box-shadow: 0px 10px 10px #37071765;
+        }
+      }
+      @media (max-width: 833px) {
+        .btn {
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+      @media (max-width: 612px) {
+        .btn {
+          font-size: 10px;
+          font-weight: 200;
+        }
+      }
+      @media (max-width: 466px) {
+        .btn {
+          font-size: 15px;
+          font-weight: 300;
+        }
+        section {
+          padding: 0px 6%;
+        }
+      }
+      @media (max-width: 286px) {
+        .btn {
+          font-size: 15px;
+          font-weight: 300;
+        }
+        section {
+          padding: 0px 6%;
+        }
+        .btn {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 10px;
+          font-weight: 900;
+        }
+        .btn:hover {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--about section-->
+    <section class="about" id="about">
+      <h2 class="first-about-h2">about us</h2>
+      <div class="about-img">
+        <!-- about img -->
+        <img src="img/about.png" alt="photo" width="250px" />
+        <!-- about heading and text -->
+        <div class="about-text">
+          <h2>debargha</h2>
+          <h5>Student <span>& Developer</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            accusamus! Fugit culpa dolorum aliquid atque ipsam sint vitae! Modi
+            sit voluptatem veritatis provident aspernatur similique fugit
+            ratione reprehenderit voluptatibus doloremque nulla esse numquam
+            tempore ea ad, impedit earum error doloribus dolorem nam ipsum culpa
+            aliquam porro. Sunt labore incidunt perspiciatis aut quidem vero.
+          </p>
+          <!-- my cv link to google drive -->
+          <a
+            href="https://drive.google.com/file/d/1YFWb2C8rins_0bL2xhzu4nzQ3kz4ygda/view?usp=sharing"
+            class="btn"
+            >Watch My Cv</a
+          >
+        </div>
+      </div>
+      <div class="about-img">
+        <!-- about img -->
+        <img src="img/about.png" alt="photo" width="250px" />
+        <!-- about heading and text -->
+        <div class="about-text">
+          <h2>tubai</h2>
+          <h5>Student <span>& Developer</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            accusamus! Fugit culpa dolorum aliquid atque ipsam sint vitae! Modi
+            sit voluptatem veritatis provident aspernatur similique fugit
+            ratione reprehenderit voluptatibus doloremque nulla esse numquam
+            tempore ea ad, impedit earum error doloribus dolorem nam ipsum culpa
+            aliquam porro. Sunt labore incidunt perspiciatis aut quidem vero.
+          </p>
+          <!-- my cv link to google drive -->
+          <a
+            href="https://drive.google.com/file/d/1YFWb2C8rins_0bL2xhzu4nzQ3kz4ygda/view?usp=sharing"
+            class="btn"
+            >Watch My Cv</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
